@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "b381ea48-5cfa-499e-85d2-4907b7d9444f",
+		"name": "Evaluación - Cine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43546231",
+		"_collection_link": "https://elizabeth-7165611.postman.co/workspace/Elizabeth's-Workspace~505b88b8-de8e-48e8-8a74-89d851060e47/collection/43546231-b381ea48-5cfa-499e-85d2-4907b7d9444f?action=share&source=collection_link&creator=43546231"
+	},
+	"item": [
+		{
+			"name": "/api/Pelicula",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44366/api/Pelicula",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44366",
+					"path": [
+						"api",
+						"Pelicula"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Pelicula/NamePelicula",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44366/api/Pelicula",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44366",
+					"path": [
+						"api",
+						"Pelicula"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Pelicula/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44366/api/Pelicula",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44366",
+					"path": [
+						"api",
+						"Pelicula"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Pelicula/",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44366/api/Pelicula",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44366",
+					"path": [
+						"api",
+						"Pelicula"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Pelicula/id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44366/api/Pelicula",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44366",
+					"path": [
+						"api",
+						"Pelicula"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
