@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SalaCine___Backend.DTOs;
 using SalaCine___Backend.Model;
 using SalaCine___Backend.Services;
 
@@ -16,23 +17,33 @@ namespace SalaCine___Backend.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<SalaCine>>> Listarsalas()
+        public async Task<ActionResult<IEnumerable<SalaCineDTO>>> Listarsalas()
         {
-            var salas = await _salaService.Getsalas();
+            return await _salaService.Getsalas();
+        }
 
-            if (salas.Value == null)
-            {
-                return NotFound();
-            }
+        [HttpPost]
+        public async Task<ActionResult<SalaCineDTO>> CrearSala([FromBody] SalaCine sala)
+        {
+            return await _salaService.PostSala(sala);
+        }
 
-            return Ok(
-            salas.Value.Select(s => new
-            {
-                s.IdSala,
-                s.Nombre,
-                s.Estado
-            })
-            );
+        [HttpPut]
+        public async Task<ActionResult<SalaCineDTO>> ActualizarSala([FromBody] SalaCine sala)
+        {
+            return await _salaService.PutSala(sala);
+        }
+
+        [HttpGet("buscar/id/{id}")]
+        public async Task<ActionResult<IEnumerable<SalaCineDTO>>> BuscarSala(int id)
+        {
+            return await _salaService.SearchPelicula(id);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<SalaCineDTO>> BorrarPelicula(int id)
+        {
+            return await _salaService.DeleteSala(id);
         }
     }
 }

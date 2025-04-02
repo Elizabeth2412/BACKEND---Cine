@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SalaCine___Backend.Controllers;
+using SalaCine___Backend.DTOs;
 using SalaCine___Backend.Model;
 using SalaCine___Backend.Repository;
 using SalaCine___Backend.Services;
@@ -29,7 +30,21 @@ builder.Services.AddScoped<SalaCine>();
 builder.Services.AddScoped<SalaService>();
 builder.Services.AddScoped<SalaController>();
 builder.Services.AddScoped<SalaRepository>();
+builder.Services.AddScoped<PeliculaDTO>();
+builder.Services.AddScoped<SalaCineDTO>();
+builder.Services.AddScoped<PeliculaSalacineDTO>();
 
+var origenesPermitidos = builder.Configuration.GetValue<string>("OrigenesPermitidos")!.Split(",");
+
+builder.Services.AddCors(opciones =>
+{
+    opciones.AddDefaultPolicy(policy =>
+    {
+        policy.WithOrigins(origenesPermitidos)
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+    });
+});
 
 var app = builder.Build();
 
@@ -42,6 +57,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors();
 
 app.UseAuthorization();
 

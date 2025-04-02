@@ -342,3 +342,4 @@ C:\Users\giaa_\Downloads\PRUEBA DE INGRESO\PRUEBA DE INGRESO - FRANCO BRIGGITTE\
 C:\Users\giaa_\Downloads\PRUEBA DE INGRESO\PRUEBA DE INGRESO - FRANCO BRIGGITTE\BACKEND\SalaCine - Backend\obj\Debug\net8.0\SalaCine - Backend.pdb
 C:\Users\giaa_\Downloads\PRUEBA DE INGRESO\PRUEBA DE INGRESO - FRANCO BRIGGITTE\BACKEND\SalaCine - Backend\obj\Debug\net8.0\SalaCine - Backend.genruntimeconfig.cache
 C:\Users\giaa_\Downloads\PRUEBA DE INGRESO\PRUEBA DE INGRESO - FRANCO BRIGGITTE\BACKEND\SalaCine - Backend\obj\Debug\net8.0\ref\SalaCine - Backend.dll
+C:\Users\giaa_\Downloads\PRUEBA DE INGRESO\PRUEBA DE INGRESO - FRANCO BRIGGITTE\BACKEND\SalaCine - Backend\obj\Debug\net8.0\SalaCine - Backend.sourcelink.json

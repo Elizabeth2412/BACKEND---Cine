@@ -1,8 +1,11 @@
-﻿namespace SalaCine___Backend.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SalaCine___Backend.DTOs
 {
     public class SalaCineDTO
     {
-        public int IdSala { get; set; }
+        [Key]
+        public int Id_Sala { get; set; }
 
         public string Nombre { get; set; } = null!;
 

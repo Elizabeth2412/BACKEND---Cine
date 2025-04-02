@@ -161,8 +161,14 @@ INSERT INTO pelicula_salacine(id_sala_cine,id_pelicula, fecha_publicacion, fecha
 			values ('1','9','2020/9/11','2020/12/10')
 
 
-CREATE PROCEDURE sp_listarsala
+CREATE OR ALTER PROCEDURE sp_listarsala
 AS
 BEGIN
-SELECT * FROM sala_cine
+SELECT 
+	id_sala AS IdSala,
+	nombre,
+	estado
+FROM sala_cine
 END;
+
+EXEC sp_listarsala

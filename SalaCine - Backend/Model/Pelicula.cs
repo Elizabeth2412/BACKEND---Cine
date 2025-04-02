@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace SalaCine___Backend.Model;
 
@@ -12,6 +13,6 @@ public partial class Pelicula
 
     public TimeOnly Duracion { get; set; }
 
-    [NotMapped]
+    [JsonIgnore]
     public virtual ICollection<PeliculaSalacine> PeliculaSalacines { get; set; } = new List<PeliculaSalacine>();
 }

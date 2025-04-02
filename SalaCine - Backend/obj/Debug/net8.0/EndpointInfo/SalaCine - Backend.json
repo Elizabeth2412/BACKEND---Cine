@@ -18,7 +18,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pelicula"
+                    "$ref": "#/components/schemas/PeliculaDTO"
                   }
                 }
               },
@@ -26,7 +26,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pelicula"
+                    "$ref": "#/components/schemas/PeliculaDTO"
                   }
                 }
               },
@@ -34,7 +34,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pelicula"
+                    "$ref": "#/components/schemas/PeliculaDTO"
                   }
                 }
               }
@@ -71,17 +71,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pelicula"
+                  "$ref": "#/components/schemas/PeliculaDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pelicula"
+                  "$ref": "#/components/schemas/PeliculaDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pelicula"
+                  "$ref": "#/components/schemas/PeliculaDTO"
                 }
               }
             }
@@ -117,17 +117,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pelicula"
+                  "$ref": "#/components/schemas/PeliculaDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pelicula"
+                  "$ref": "#/components/schemas/PeliculaDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pelicula"
+                  "$ref": "#/components/schemas/PeliculaDTO"
                 }
               }
             }
@@ -158,7 +158,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pelicula"
+                    "$ref": "#/components/schemas/PeliculaDTO"
                   }
                 }
               },
@@ -166,7 +166,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pelicula"
+                    "$ref": "#/components/schemas/PeliculaDTO"
                   }
                 }
               },
@@ -174,7 +174,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pelicula"
+                    "$ref": "#/components/schemas/PeliculaDTO"
                   }
                 }
               }
@@ -205,17 +205,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pelicula"
+                  "$ref": "#/components/schemas/PeliculaDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pelicula"
+                  "$ref": "#/components/schemas/PeliculaDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pelicula"
+                  "$ref": "#/components/schemas/PeliculaDTO"
                 }
               }
             }
@@ -236,7 +236,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/SalaCine"
+                    "$ref": "#/components/schemas/SalaCineDTO"
                   }
                 }
               },
@@ -244,7 +244,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/SalaCine"
+                    "$ref": "#/components/schemas/SalaCineDTO"
                   }
                 }
               },
@@ -252,8 +252,189 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/SalaCine"
+                    "$ref": "#/components/schemas/SalaCineDTO"
                   }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Sala"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalaCine"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalaCine"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalaCine"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalaCineDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalaCineDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalaCineDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Sala"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalaCine"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalaCine"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalaCine"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalaCineDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalaCineDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalaCineDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Sala/buscar/id/{id}": {
+      "get": {
+        "tags": [
+          "Sala"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SalaCineDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SalaCineDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SalaCineDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Sala/{id}": {
+      "delete": {
+        "tags": [
+          "Sala"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalaCineDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalaCineDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalaCineDTO"
                 }
               }
             }
@@ -374,13 +555,24 @@
           "duracion": {
             "type": "string",
             "format": "time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PeliculaDTO": {
+        "type": "object",
+        "properties": {
+          "id_Pelicula": {
+            "type": "integer",
+            "format": "int32"
           },
-          "peliculaSalacines": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/PeliculaSalacine"
-            },
+          "nombre": {
+            "type": "string",
             "nullable": true
+          },
+          "duracion": {
+            "type": "string",
+            "format": "time"
           }
         },
         "additionalProperties": false
@@ -424,7 +616,7 @@
       "SalaCine": {
         "type": "object",
         "properties": {
-          "idSala": {
+          "id_Sala": {
             "type": "integer",
             "format": "int32"
           },
@@ -435,12 +627,23 @@
           "estado": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SalaCineDTO": {
+        "type": "object",
+        "properties": {
+          "id_Sala": {
+            "type": "integer",
+            "format": "int32"
           },
-          "peliculaSalacines": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/PeliculaSalacine"
-            },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
             "nullable": true
           }
         },

@@ -1,4 +1,4 @@
-﻿namespace SalaCine___Backend.Model
+﻿namespace SalaCine___Backend.DTOs
 {
     public class PeliculaDTO
     {
