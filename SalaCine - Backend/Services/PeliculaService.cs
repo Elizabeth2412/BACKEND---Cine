@@ -51,6 +51,7 @@ namespace SalaCine___Backend.Services
 
         //Crear Pelicula
 
+        // Crear Pelicula
         public async Task<ActionResult<PeliculaDTO>> PostPelicula(Pelicula pelicula)
         {
             var peliculas = await _peliculaRepository.PostPelicula(pelicula);
@@ -60,14 +61,10 @@ namespace SalaCine___Backend.Services
                 return StatusCode(StatusCodes.Status500InternalServerError, "No se pudo crear la película.");
             }
 
-            var respons = new
-            {
-                mensaje = "Película creada correctamente",
-                pelicula = peliculas.Value
-            };
-
-             return CreatedAtAction(nameof(PostPelicula), new { nombre = peliculas.Value.Nombre }, respons);
+            // Devolver solo el código 201 Created con la película creada
+            return StatusCode(StatusCodes.Status201Created, peliculas.Value);
         }
+
 
 
         //Eliminar Pelicula

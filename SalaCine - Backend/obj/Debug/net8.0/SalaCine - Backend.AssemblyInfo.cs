@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SalaCine - Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88e431e98734e9ad08e0e239054bd49b025c6bc5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc2fe20b1748a19b248d0a30fe6c940a5cea3fd2")]
 [assembly: System.Reflection.AssemblyProductAttribute("SalaCine - Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SalaCine - Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

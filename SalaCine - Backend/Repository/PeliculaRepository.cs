@@ -40,12 +40,21 @@ namespace SalaCine___Backend.Repository
 
             if (result > 0)
             {
-                return CreatedAtAction(nameof(PostPelicula), new { nombre = pelicula.Nombre }, pelicula);
+                return new PeliculaDTO
+                {
+                    Nombre = pelicula.Nombre,
+                    Duracion = pelicula.Duracion
+                };
             }
-            else
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, "No se pudo crear la película.");
-            }
+
+
+            //if (result > 0)
+            //{
+            //    return CreatedAtAction(nameof(PostPelicula), new { nombre = pelicula.Nombre }, pelicula);
+            //}
+            
+            return StatusCode(StatusCodes.Status500InternalServerError, "No se pudo crear la película.");
+            
         }
 
         //Editar Pelicula
